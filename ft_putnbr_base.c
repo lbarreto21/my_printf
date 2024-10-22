@@ -6,15 +6,15 @@
 /*   By: lbarreto <lbarreto@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:44:39 by lbarreto          #+#    #+#             */
-/*   Updated: 2024/10/17 20:02:10 by lbarreto         ###   ########.fr       */
+/*   Updated: 2024/10/22 09:35:34 by lbarreto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "print.h"
+#include "ft_printf.h"
 
-int	ft_putnbr_base(unsigned long	n, char *base)
+int	ft_putnbr_base(unsigned int n, char *base)
 {
-	unsigned long	base_size;
+	unsigned int	base_size;
 	int				number_size;
 
 	base_size = 0;

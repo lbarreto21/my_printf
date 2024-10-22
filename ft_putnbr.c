@@ -1,18 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbarreto <lbarreto@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 13:38:18 by lbarreto          #+#    #+#             */
-/*   Updated: 2024/10/22 09:37:53 by lbarreto         ###   ########.fr       */
+/*   Created: 2024/10/21 15:00:49 by lbarreto          #+#    #+#             */
+/*   Updated: 2024/10/22 09:35:19 by lbarreto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+int	ft_putnbr(int n)
 {
-	return (write(1, &c, 1));
+	int		number_size;
+	char	number;
+
+	number_size = 0;
+	if (n == -2147483648)
+		return (write(1, "-2147483648", 11));
+	if (n < 0)
+	{
+		number_size += write (1, "-", 1);
+		n = -n;
+	}
+	if (n > 9)
+	{
+		number_size += ft_putnbr(n / 10);
+		number_size += ft_putnbr(n % 10);
+	}
+	else
+	{
+		number = n + '0';
+		number_size += write(1, &number, 1);
+	}
+	return (number_size);
 }
+
