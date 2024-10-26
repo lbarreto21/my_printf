@@ -6,15 +6,15 @@
 /*   By: lbarreto <lbarreto@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:40:07 by lbarreto          #+#    #+#             */
-/*   Updated: 2024/10/22 09:44:48 by lbarreto         ###   ########.fr       */
+/*   Updated: 2024/10/26 13:56:36 by lbarreto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINT_H
-# define PRINT_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-#include <unistd.h>
-#include <stdarg.h>
+# include <unistd.h>
+# include <stdarg.h>
 
 int	ft_putchar(char c);
 int	ft_putnbr(int n);

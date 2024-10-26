@@ -6,7 +6,7 @@
 /*   By: lbarreto <lbarreto@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:00:49 by lbarreto          #+#    #+#             */
-/*   Updated: 2024/10/22 09:35:19 by lbarreto         ###   ########.fr       */
+/*   Updated: 2024/10/26 13:55:33 by lbarreto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,3 @@ int	ft_putnbr(int n)
 	}
 	return (number_size);
 }
-
